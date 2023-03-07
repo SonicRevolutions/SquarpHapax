@@ -7,16 +7,16 @@ TRACKNAME Nymphes
 TYPE POLY
 
 # Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
-OUTPORT NULL
+OUTPORT A
 
 # Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
-OUTCHAN NULL
+OUTCHAN 7
 
 # Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
 INPORT NONE
 
 # Can be x (between 1-16), ALL, or NULL. This definition will be ignored if INPORT is NONE, ALLACTIVE or CVG
-INCHAN 7
+INCHAN NULL
  
 
 # PC
