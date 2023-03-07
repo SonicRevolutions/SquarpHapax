@@ -1,0 +1,35 @@
+VERSION 1
+
+TRACKNAME Microcosm
+TYPE POLY
+
+# Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
+OUTPORT A
+
+# Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
+OUTCHAN 14
+
+# Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
+INPORT NONE
+
+# Can be x (between 1-16), ALL, or NULL. This definition will be ignored if INPORT is NONE, ALLACTIVE or CVG
+INCHAN NULL
+
+[PC]
+
+[/PC]
+
+[CC]
+
+[/CC]
+
+# Syntax: POT_NUMBER TYPE:VALUE or POT_NUMBER TYPE:VALUE DEFAULT=DEFAULT_VALUE
+[ASSIGN]
+[/ASSIGN]
+
+# Syntax: TYPE:VALUE
+[AUTOMATION]
+[/AUTOMATION]
+
+[COMMENT]
+[/COMMENT]
