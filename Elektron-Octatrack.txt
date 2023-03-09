@@ -27,14 +27,14 @@ INCHAN NULL
 # NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
 # Please note this section will be discarded for tracks which are not DRUM tracks
 [DRUMLANES]
-8:NULL:8:43 TRACK 8
-7:NULL:7:42 TRACK 7
-6:NULL:6:41 TRACK 6
-5:NULL:5:40 TRACK 5
-4:NULL:4:39 TRACK 4
-3:NULL:3:38 TRACK 3
-2:NULL:2:37 TRACK 2
-1:NULL:1:36 TRACK 1
+8:NULL:8:84 TRACK 8
+7:NULL:7:84 TRACK 7
+6:NULL:6:84 TRACK 6
+5:NULL:5:84 TRACK 5
+4:NULL:4:84 TRACK 4
+3:NULL:3:84 TRACK 3
+2:NULL:2:84 TRACK 2
+1:NULL:1:84 TRACK 1
 [/DRUMLANES]
 
 # PC
