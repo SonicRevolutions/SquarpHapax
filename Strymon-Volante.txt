@@ -4,10 +4,10 @@ TRACKNAME Volante
 TYPE POLY
 
 # Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
-OUTPORT USBD
+OUTPORT A
 
 # Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
-OUTCHAN 7
+OUTCHAN 6
 
 # Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
 INPORT NONE
