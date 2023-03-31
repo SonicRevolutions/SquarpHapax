@@ -1,0 +1,210 @@
+VERSION 1 # Currently, this should only be 1.
+
+# Supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
+TRACKNAME Iridium L1
+
+# Can be POLY, DRUM, MPE, or NULL
+TYPE POLY
+
+# Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
+OUTPORT A
+
+# Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
+OUTCHAN 16
+
+# Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
+INPORT NULL
+
+# Can be x (between 1-16), ALL, or NULL. This definition will be ignored if INPORT is NONE, ALLACTIVE or CVG
+INCHAN NULL
+
+# DRUMLANES
+# Syntax: ROW:TRIG:CHAN:NOTENUMBER NAME
+# ROW must be between 1 and 8
+# TRIG can be between 0 and 127, or NULL
+# CHAN can be a number between 1 and 16, Gx, CVx, CVGx (x between 1 and 4), or NULL
+# NOTENUMBER can be between 0 and 127, or NULL
+# NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
+# Please note this section will be discarded for tracks which are not DRUM tracks
+[DRUMLANES]
+[/DRUMLANES]
+
+
+# PC
+# Syntax: NUMBER NAME
+# number must be either:
+#   - A number (for simple PC)
+#   - Three numbers, delimited by ':', which represent PC:MSB:LSB. You can put 'NULL' to not set the MSB/LSB.
+# PC must be between 1...128
+# MSB/LSB must be between 0...127
+[PC]
+[/PC]
+
+
+# CC
+# Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
+# DEFAULT_VALUE must be a valid number between 0 and 127
+[CC]
+0 Filter1 Cutoff
+2 Filter1 Reso
+3 Filter1 Attack
+4 Filter1 Decay
+5 Filter1 Sustain
+6 Filter1 Release
+7 Filter1 Amount
+8 Filter1 Velo Amount
+9 Filter2 Cutoff
+10 Filter2 Reso
+11 Filter2 Attack
+12 Filter2 Decay
+13 Filter2 Sustain
+14 Filter2 Release
+15 Filter2 Amount
+16 Filter2 Velo Amount
+17 Amp Velo Amount
+18 Amp Attack
+19 Amp Decay
+20 Amp Sustain
+21 Amp Release
+22 Delay Dry Wet
+23 Delay Feedback
+24 Delay Time L
+25 Delay Time R
+26 Delay Sync L
+27 Delay Sync R
+28 Reverb Gain
+29 Reverb Color
+30 Reverb Time
+31 Reverb Mod Depth
+32 Osc1 Fine Pitch
+33 Osc1 Vol
+34 Osc1 Pan
+35 Osc1 WT Position
+36 Osc1 WT Spectrum
+37 Osc1 WT Table
+38 Osc1 WT Stepped
+39 Osc1 WF Shape
+40 Osc1 WF Desity
+41 Osc1 WF Spread
+42 Osc1 WF PW
+43 Osc1 WF Sync
+44 Osc1 PT Position
+45 Osc1 PT Travel
+46 Osc2 Fine Pitch
+47 Osc2 Vol
+48 Osc2 Pan
+49 Osc2 WT Position
+50 Osc2 WT Spectrum
+51 Osc2 WT Table
+52 Osc2 WT Stepped
+53 Osc2 WF Shape
+54 Osc2 WF Desity
+55 Osc2 WF Spread
+56 Osc2 WF PW
+57 Osc2 WF Sync
+58 Osc2 PT Position
+59 Osc2 PT Travel
+60 Osc3 Fine Pitch
+61 Osc3 Vol
+62 Osc3 Pan
+63 Osc3 WT Position
+64 Osc3 WT Spectrum
+65 Osc3 WT Table
+66 Osc3 WT Stepped
+67 Osc3 WF Shape
+68 Osc3 WF Desity
+69 Osc3 WF Spread
+70 Osc3 WF PW
+71 Osc3 WF Sync
+72 Osc3 PT Position
+73 Osc3 PT Travel
+74 Ringmod Osc1 To Osc2
+75 Ringmod Osc1 To Osc3
+76 Digi Former Amount
+77 Digi Former Color
+78 Digi Former Pan
+79 Digi Former Level
+80 Lfo1 Speed
+81 Lfo1 Amount
+82 Lfo2 Speed
+83 Lfo2 Amount
+84 Lfo3 Speed
+85 Lfo3 Amount
+86 Komplex Speed
+87 Komplex Amount
+88 Komplex Entropy
+89 Glide Rate
+90 Glide On Off
+91 Unisono Count
+92 Unisono Detune
+93 Chorus Dry Wet
+94 Chorus Speed
+95 Chorus Feedback
+96 Phaser Dry Wet
+97 Phaser Depth
+98 Phaser Feedback
+99 Flanger Dry Wet
+100 Flanger Speed
+101 Flanger Feedback
+102 Drive Amount
+103 Drive Dry Wet
+104 Drive Gain
+105 Free Env1 Attack
+106 Free Env1 Decay
+107 Free Env1 Sustain
+108 Free Env1 Release
+109 Free Env1 Amount
+110 Free Env1 Velo Amount
+111 Free Env2 Attack
+112 Free Env2 Decay
+113 Free Env2 Sustain
+114 Free Env2 Release
+115 Free Env2 Amount
+116 Free Env2 Velo Amount
+[/CC]
+
+
+# NRPN
+# Syntax: "MSB:LSB:DEPTH NAME" or "MSB:LSB:DEPTH:DEFAULT=xx NAME"
+# Lsb & msb should be between 0 and 127
+# DEPTH can be 7 or 14
+# For NRPN: DEFAULT_VALUE must be a valid number, either between 0 and 127 (for 7 bit NRPNs) or between 0 and 16383 (for 14bit NRPNs)
+[NRPN]
+[/NRPN]
+
+
+# ASSIGN
+# Syntax: POT_NUMBER TYPE:VALUE or POT_NUMBER TYPE:VALUE DEFAULT=DEFAULT_VALUE
+# POT_NUMBER must be between 1 and 8
+# TYPE can be "CC", "PB" (pitchbend), "AT" (aftertouch), "CV", "NRPN", or "NULL" (this won't assign the pot).
+# Non explicitly-defined pots will be considered "NULL"
+# VALUE VALIDATION
+#### For CC: Value must be a valid number between 0 and 119
+#### For PB and AT, any text after the TYPE will be ignored
+#### For CV, value must be between 1 and 4
+#### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
+# DEFAULT VALUE
+#### For CC: DEFAULT_VALUE must be a valid number between 0 and 127
+#### For PB: DEFAULT_VALUE must be a valid number between 0 and 16383
+#### For NRPN: DEFAULT_VALUE must be a valid number, either between 0 and 127 (for 7 bit NRPNs) or between 0 and 16383 (for 14bit NRPNs)
+#### For CV: DEFAULT_VALUE must be either a valid number between 0 and 65535, or a voltage between -5V and 5V, e.g. "-4.25V" or "1.7V"
+#### Please note default value will be ignored for PB and AT messages.
+[ASSIGN]
+[/ASSIGN]
+
+
+# AUTOMATION
+# Syntax: TYPE:VALUE
+# TYPE can be "CC", "PB" (pitchbend), "AT" (aftertouch), "CV", or "NRPN"
+# VALUE VALIDATION
+#### For CC: Value must be a valid number between 0 and 119
+#### For PB and AT, any text after the TYPE will be ignored
+#### For CV, value must be between 1 and 4
+#### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
+[AUTOMATION]
+[/AUTOMATION]
+
+
+# This section will be readable from Hapax.
+[COMMENT]
+[/COMMENT]
