@@ -161,6 +161,112 @@ INCHAN NULL
 #### For CV, value must be between 1 and 4
 #### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
 [AUTOMATION]
+C:1 #Mix
+CC:2 #Dry Trim
+CC:3 #Wet Trim
+CC:4 #Expression Pedal
+CC:5 #Preamp Type
+CC:6 #Preamp Location
+CC:7 #Preamp Parameter 1
+CC:8 #Preamp Parameter 2
+CC:9 #Preamp Parameter 3
+CC:10 #Preamp Parameter 4
+CC:11 #Preamp Parameter 5
+CC:12 #Preamp Parameter 6
+CC:13 #Delay Structure
+CC:14 #Bypass
+CC:15 #Time
+CC:16 #Delay Type
+CC:17 #Left Note Division
+CC:18 #Right Note Division
+CC:19 #Feedback
+CC:20 #Cross Feedback
+CC:21 #Delay Mod
+CC:22 #Delay Parameter 1
+CC:23 #Delay Parameter 2
+CC:24 #Delay Parameter 3
+CC:25 #Delay Parameter 4
+CC:26 #Delay Parameter 5
+CC:27 #Delay Parameter 6
+CC:28 #Delay Parameter 7
+CC:29 #Delay Parameter 8
+CC:30 #Delay Parameter 9
+CC:31 #Delay Parameter 10
+CC:32 #Delay Parameter 11
+CC:33 #Delay Parameter 12
+CC:34 #Delay Parameter 13
+CC:35 #Delay Parameter 14
+CC:36 #Delay Parameter 15
+CC:37 #Delay Parameter 16
+CC:38 #Delay Parameter 17
+CC:39 #Delay Parameter 18
+CC:40 #Delay Parameter 19
+CC:41 #Delay Parameter 20
+CC:42 #Delay Parameter 21
+CC:43 #Delay Parameter 22
+CC:44 #Delay Parameter 23
+CC:45 #Delay Parameter 24
+CC:46 #Delay Parameter 25
+CC:47 #Delay Parameter 26
+CC:48 #Delay Parameter 27
+CC:49 #Delay Parameter 28
+CC:50 #Delay Parameter 29
+CC:51 #Delay Parameter 30
+CC:52 #Delay Parameter 31
+CC:53 #Delay Parameter 32
+CC:54 #Delay Parameter 33
+CC:55 #Delay Parameter 34
+CC:56 #Delay Parameter 35
+CC:57 #Delay Parameter 36
+CC:58 #Delay Parameter 37
+CC:59 #Delay Parameter 38
+CC:60 #Delay Parameter 39
+CC:61 #Delay Parameter 40
+CC:62 #Dynamic Type
+CC:63 #Dynamic Location 
+CC:64 #Dynamic Parameter 1
+CC:65 #Dynamic Parameter 2
+CC:66 #Dynamic Parameter 3
+CC:67 #Dynamic Parameter 4
+CC:68 #Dynamic Parameter 5
+CC:69 #Dynamic Parameter 6
+CC:70 #Pitch Type
+CC:71 #Pitch Location
+CC:72 #Pitch Parameter 1
+CC:73 #Pitch Parameter 2
+CC:74 #Pitch Parameter 3
+CC:75 #Pitch Parameter 4
+CC:76 #Pitch Parameter 5
+CC:77 #Pitch Parameter 6
+CC:78 #Filter Type
+CC:79 #Filter Location 
+CC:80 #Filter Parameter 1
+CC:81 #Filter Parameter 2
+CC:82 #Filter Parameter 3
+CC:83 #Filter Parameter 4
+CC:84 #Filter Parameter 5
+CC:85 #Filter Parameter 6
+CC:86 #Mod Type
+CC:87 #Mod Location
+CC:88 #Mod Parameter 1
+CC:89 #Mod Parameter 2
+CC:90 #Mod Parameter 3
+CC:91 #Mod Parameter 4
+CC:92 #Mod Parameter 5
+CC:93 #Mod Parameter 6
+CC:94 #Looper Location
+CC:95 #Looper Level
+CC:96 #Looper Feedback
+CC:97 #Looper FX1 Select
+CC:98 #Looper FX2 Select
+CC:99 #Tap Tempo
+CC:100 #Looper Rec-Overdub
+CC:101 #Looper Play-Stop
+CC:102 #Looper FX1 Press
+CC:103 #Looper FX2 Press
+CC:117 #Toggle Tuner Mode
+CC:118 #Trigger Hold Mod
+CC:119 #Delay Half Speed
 [/AUTOMATION]
 
 # This section will be readable from Hapax.
