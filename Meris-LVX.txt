@@ -1,0 +1,169 @@
+VERSION 1 # Currently, this should only be 1.
+
+# Supports all alphanumeric ASCII, and ' ', '_', '-', '+'
+# Can also be omitted or NULL to not override the current track name, e.g. "TRACKNAME NULL"
+TRACKNAME LVX
+
+# Can be POLY, DRUM, MPE, or NULL
+TYPE POLY
+
+# Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
+OUTPORT C
+
+# Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
+OUTCHAN 13
+
+# Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
+INPORT NULL
+
+# Can be x (between 1-16), ALL, or NULL -- ignored if INPORT is NONE, ALLACTIVE or CVG
+INCHAN NULL
+
+# PC
+# Syntax: NUMBER NAME
+# number must be either:
+#   - A number (for simple PC)
+#   - Three numbers, delimited by ':', which represent PC:MSB:LSB. You can put 'NULL' to not set the MSB/LSB.
+# PC must be between 1...128
+# MSB/LSB must be between 0...127
+[PC]
+[/PC]
+
+# CC
+# Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
+# DEFAULT_VALUE must be a valid number between 0 and 127
+[CC]
+1 Mix
+2 Dry Trim
+3 Wet Trim
+4 Expression Pedal
+5 Preamp Type
+6 Preamp Location
+7 Preamp Parameter 1
+8 Preamp Parameter 2
+9 Preamp Parameter 3
+10 Preamp Parameter 4
+11 Preamp Parameter 5
+12 Preamp Parameter 6
+13 Delay Structure
+14 Bypass
+15 Time
+16 Delay Type
+17 Left Note Division
+18 Right Note Division
+19 Feedback
+20 Cross Feedback
+21 Delay Mod
+22 Delay Parameter 1
+23 Delay Parameter 2
+24 Delay Parameter 3
+25 Delay Parameter 4
+26 Delay Parameter 5
+27 Delay Parameter 6
+28 Delay Parameter 7
+29 Delay Parameter 8
+30 Delay Parameter 9
+31 Delay Parameter 10
+32 Delay Parameter 11
+33 Delay Parameter 12
+34 Delay Parameter 13
+35 Delay Parameter 14
+36 Delay Parameter 15
+37 Delay Parameter 16
+38 Delay Parameter 17
+39 Delay Parameter 18
+40 Delay Parameter 19
+41 Delay Parameter 20
+42 Delay Parameter 21
+43 Delay Parameter 22
+44 Delay Parameter 23
+45 Delay Parameter 24
+46 Delay Parameter 25
+47 Delay Parameter 26
+48 Delay Parameter 27
+49 Delay Parameter 28
+50 Delay Parameter 29
+51 Delay Parameter 30
+52 Delay Parameter 31
+53 Delay Parameter 32
+54 Delay Parameter 33
+55 Delay Parameter 34
+56 Delay Parameter 35
+57 Delay Parameter 36
+58 Delay Parameter 37
+59 Delay Parameter 38
+60 Delay Parameter 39
+61 Delay Parameter 40
+62 Dynamic Type
+63 Dynamic Location 
+64 Dynamic Parameter 1
+65 Dynamic Parameter 2
+66 Dynamic Parameter 3
+67 Dynamic Parameter 4
+68 Dynamic Parameter 5
+69 Dynamic Parameter 6
+70 Pitch Type
+71 Pitch Location
+72 Pitch Parameter 1
+73 Pitch Parameter 2
+74 Pitch Parameter 3
+75 Pitch Parameter 4
+76 Pitch Parameter 5
+77 Pitch Parameter 6
+78 Filter Type
+79 Filter Location 
+80 Filter Parameter 1
+81 Filter Parameter 2
+82 Filter Parameter 3
+83 Filter Parameter 4
+84 Filter Parameter 5
+85 Filter Parameter 6
+86 Mod Type
+87 Mod Location
+88 Mod Parameter 1
+89 Mod Parameter 2
+90 Mod Parameter 3
+91 Mod Parameter 4
+92 Mod Parameter 5
+93 Mod Parameter 6
+94 Looper Location
+95 Looper Level
+96 Looper Feedback
+97 Looper FX1 Select
+98 Looper FX2 Select
+99 Tap Tempo
+100 Looper Rec-Overdub
+101 Looper Play-Stop
+102 Looper FX1 Press
+103 Looper FX2 Press
+117 Toggle Tuner Mode
+118 Trigger Hold Mod
+119 Delay Half Speed
+[/CC]
+
+# NRPN
+# Syntax: "MSB:LSB:DEPTH NAME" or "MSB:LSB:DEPTH:DEFAULT=xx NAME"
+# Lsb & msb should be between 0 and 127
+  # Note: LSB can be over 127 ONLY if MSB is 0 or omitted
+  # e.g. '0:1026:7 FOO', or ':2000:7 BAR'
+  # the examples above would be equivalent to '8:2:7 FOO' and '15:80:7 BAR' respectively
+# DEPTH can be 7 or 14
+# For NRPN: DEFAULT_VALUE must be a valid number, either between 0 and 127 (for 7 bit NRPNs) or between 0 and 16383 (for 14bit NRPNs)
+[NRPN]
+[/NRPN]
+
+# AUTOMATION
+# Syntax: TYPE:VALUE
+# TYPE can be "CC", "PB" (pitchbend), "AT" (aftertouch), "CV", or "NRPN"
+# VALUE VALIDATION
+#### For CC: Value must be a valid number between 0 and 119
+#### For PB and AT, any text after the TYPE will be ignored
+#### For CV, value must be between 1 and 4
+#### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
+[AUTOMATION]
+[/AUTOMATION]
+
+# This section will be readable from Hapax.
+[COMMENT]
+LVX
+[/COMMENT]
