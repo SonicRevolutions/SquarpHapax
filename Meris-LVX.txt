@@ -39,12 +39,12 @@ INCHAN NULL
 4 Expression Pedal
 5 Preamp Type
 6 Preamp Location
-7 Preamp Parameter 1
-8 Preamp Parameter 2
-9 Preamp Parameter 3
-10 Preamp Parameter 4
-11 Preamp Parameter 5
-12 Preamp Parameter 6
+7 Preamp Para 1
+8 Preamp Para 2
+9 Preamp Para 3
+10 Preamp Para 4
+11 Preamp Para 5
+12 Preamp Para 6
 13 Delay Structure
 14 Bypass
 15 Time
@@ -54,78 +54,78 @@ INCHAN NULL
 19 Feedback
 20 Cross Feedback
 21 Delay Mod
-22 Delay Parameter 1
-23 Delay Parameter 2
-24 Delay Parameter 3
-25 Delay Parameter 4
-26 Delay Parameter 5
-27 Delay Parameter 6
-28 Delay Parameter 7
-29 Delay Parameter 8
-30 Delay Parameter 9
-31 Delay Parameter 10
-32 Delay Parameter 11
-33 Delay Parameter 12
-34 Delay Parameter 13
-35 Delay Parameter 14
-36 Delay Parameter 15
-37 Delay Parameter 16
-38 Delay Parameter 17
-39 Delay Parameter 18
-40 Delay Parameter 19
-41 Delay Parameter 20
-42 Delay Parameter 21
-43 Delay Parameter 22
-44 Delay Parameter 23
-45 Delay Parameter 24
-46 Delay Parameter 25
-47 Delay Parameter 26
-48 Delay Parameter 27
-49 Delay Parameter 28
-50 Delay Parameter 29
-51 Delay Parameter 30
-52 Delay Parameter 31
-53 Delay Parameter 32
-54 Delay Parameter 33
-55 Delay Parameter 34
-56 Delay Parameter 35
-57 Delay Parameter 36
-58 Delay Parameter 37
-59 Delay Parameter 38
-60 Delay Parameter 39
-61 Delay Parameter 40
+22 Delay Para 1
+23 Delay Para 2
+24 Delay Para 3
+25 Delay Para 4
+26 Delay Para 5
+27 Delay Para 6
+28 Delay Para 7
+29 Delay Para 8
+30 Delay Para 9
+31 Delay Para 10
+32 Delay Para 11
+33 Delay Para 12
+34 Delay Para 13
+35 Delay Para 14
+36 Delay Para 15
+37 Delay Para 16
+38 Delay Para 17
+39 Delay Para 18
+40 Delay Para 19
+41 Delay Para 20
+42 Delay Para 21
+43 Delay Para 22
+44 Delay Para 23
+45 Delay Para 24
+46 Delay Para 25
+47 Delay Para 26
+48 Delay Para 27
+49 Delay Para 28
+50 Delay Para 29
+51 Delay Para 30
+52 Delay Para 31
+53 Delay Para 32
+54 Delay Para 33
+55 Delay Para 34
+56 Delay Para 35
+57 Delay Para 36
+58 Delay Para 37
+59 Delay Para 38
+60 Delay Para 39
+61 Delay Para 40
 62 Dynamic Type
 63 Dynamic Location 
-64 Dynamic Parameter 1
-65 Dynamic Parameter 2
-66 Dynamic Parameter 3
-67 Dynamic Parameter 4
-68 Dynamic Parameter 5
-69 Dynamic Parameter 6
+64 Dynamic Para 1
+65 Dynamic Para 2
+66 Dynamic Para 3
+67 Dynamic Para 4
+68 Dynamic Para 5
+69 Dynamic Para 6
 70 Pitch Type
 71 Pitch Location
-72 Pitch Parameter 1
-73 Pitch Parameter 2
-74 Pitch Parameter 3
-75 Pitch Parameter 4
-76 Pitch Parameter 5
-77 Pitch Parameter 6
+72 Pitch Para 1
+73 Pitch Para 2
+74 Pitch Para 3
+75 Pitch Para 4
+76 Pitch Para 5
+77 Pitch Para 6
 78 Filter Type
 79 Filter Location 
-80 Filter Parameter 1
-81 Filter Parameter 2
-82 Filter Parameter 3
-83 Filter Parameter 4
-84 Filter Parameter 5
-85 Filter Parameter 6
+80 Filter Para 1
+81 Filter Para 2
+82 Filter Para 3
+83 Filter Para 4
+84 Filter Para 5
+85 Filter Para 6
 86 Mod Type
 87 Mod Location
-88 Mod Parameter 1
-89 Mod Parameter 2
-90 Mod Parameter 3
-91 Mod Parameter 4
-92 Mod Parameter 5
-93 Mod Parameter 6
+88 Mod Para 1
+89 Mod Para 2
+90 Mod Para 3
+91 Mod Para 4
+92 Mod Para 5
+93 Mod Para 6
 94 Looper Location
 95 Looper Level
 96 Looper Feedback
@@ -161,20 +161,8 @@ INCHAN NULL
 #### For CV, value must be between 1 and 4
 #### For NRPN, value must be MSB:LSB:DEPTH, with both lsb & msb bebtween 0 and 127, and DEPTH being either 7 or 14
 [AUTOMATION]
-C:1 #Mix
-CC:2 #Dry Trim
-CC:3 #Wet Trim
-CC:4 #Expression Pedal
-CC:5 #Preamp Type
-CC:6 #Preamp Location
-CC:7 #Preamp Parameter 1
-CC:8 #Preamp Parameter 2
-CC:9 #Preamp Parameter 3
-CC:10 #Preamp Parameter 4
-CC:11 #Preamp Parameter 5
-CC:12 #Preamp Parameter 6
+CC:1 #Mix
 CC:13 #Delay Structure
-CC:14 #Bypass
 CC:15 #Time
 CC:16 #Delay Type
 CC:17 #Left Note Division
@@ -182,89 +170,56 @@ CC:18 #Right Note Division
 CC:19 #Feedback
 CC:20 #Cross Feedback
 CC:21 #Delay Mod
-CC:22 #Delay Parameter 1
-CC:23 #Delay Parameter 2
-CC:24 #Delay Parameter 3
-CC:25 #Delay Parameter 4
-CC:26 #Delay Parameter 5
-CC:27 #Delay Parameter 6
-CC:28 #Delay Parameter 7
-CC:29 #Delay Parameter 8
-CC:30 #Delay Parameter 9
-CC:31 #Delay Parameter 10
-CC:32 #Delay Parameter 11
-CC:33 #Delay Parameter 12
-CC:34 #Delay Parameter 13
-CC:35 #Delay Parameter 14
-CC:36 #Delay Parameter 15
-CC:37 #Delay Parameter 16
-CC:38 #Delay Parameter 17
-CC:39 #Delay Parameter 18
-CC:40 #Delay Parameter 19
-CC:41 #Delay Parameter 20
-CC:42 #Delay Parameter 21
-CC:43 #Delay Parameter 22
-CC:44 #Delay Parameter 23
-CC:45 #Delay Parameter 24
-CC:46 #Delay Parameter 25
-CC:47 #Delay Parameter 26
-CC:48 #Delay Parameter 27
-CC:49 #Delay Parameter 28
-CC:50 #Delay Parameter 29
-CC:51 #Delay Parameter 30
-CC:52 #Delay Parameter 31
-CC:53 #Delay Parameter 32
-CC:54 #Delay Parameter 33
-CC:55 #Delay Parameter 34
-CC:56 #Delay Parameter 35
-CC:57 #Delay Parameter 36
-CC:58 #Delay Parameter 37
-CC:59 #Delay Parameter 38
-CC:60 #Delay Parameter 39
-CC:61 #Delay Parameter 40
-CC:62 #Dynamic Type
-CC:63 #Dynamic Location 
-CC:64 #Dynamic Parameter 1
-CC:65 #Dynamic Parameter 2
-CC:66 #Dynamic Parameter 3
-CC:67 #Dynamic Parameter 4
-CC:68 #Dynamic Parameter 5
-CC:69 #Dynamic Parameter 6
-CC:70 #Pitch Type
-CC:71 #Pitch Location
-CC:72 #Pitch Parameter 1
-CC:73 #Pitch Parameter 2
-CC:74 #Pitch Parameter 3
-CC:75 #Pitch Parameter 4
-CC:76 #Pitch Parameter 5
-CC:77 #Pitch Parameter 6
-CC:78 #Filter Type
-CC:79 #Filter Location 
-CC:80 #Filter Parameter 1
-CC:81 #Filter Parameter 2
-CC:82 #Filter Parameter 3
-CC:83 #Filter Parameter 4
-CC:84 #Filter Parameter 5
-CC:85 #Filter Parameter 6
-CC:86 #Mod Type
-CC:87 #Mod Location
-CC:88 #Mod Parameter 1
-CC:89 #Mod Parameter 2
-CC:90 #Mod Parameter 3
-CC:91 #Mod Parameter 4
-CC:92 #Mod Parameter 5
-CC:93 #Mod Parameter 6
-CC:94 #Looper Location
-CC:95 #Looper Level
-CC:96 #Looper Feedback
-CC:97 #Looper FX1 Select
-CC:98 #Looper FX2 Select
-CC:99 #Tap Tempo
+CC:22 #Delay Para 1
+CC:23 #Delay Para 2
+CC:24 #Delay Para 3
+CC:25 #Delay Para 4
+CC:26 #Delay Para 5
+CC:27 #Delay Para 6
+CC:28 #Delay Para 7
+CC:29 #Delay Para 8
+CC:30 #Delay Para 9
+CC:31 #Delay Para 10
+CC:32 #Delay Para 11
+CC:33 #Delay Para 12
+CC:34 #Delay Para 13
+CC:35 #Delay Para 14
+CC:36 #Delay Para 15
+CC:37 #Delay Para 16
+CC:38 #Delay Para 17
+CC:39 #Delay Para 18
+CC:40 #Delay Para 19
+CC:41 #Delay Para 20
+CC:42 #Delay Para 21
+CC:43 #Delay Para 22
+CC:44 #Delay Para 23
+CC:45 #Delay Para 24
+CC:46 #Delay Para 25
+CC:47 #Delay Para 26
+CC:48 #Delay Para 27
+CC:49 #Delay Para 28
+CC:50 #Delay Para 29
+CC:51 #Delay Para 30
+CC:52 #Delay Para 31
+CC:53 #Delay Para 32
+CC:54 #Delay Para 33
+CC:55 #Delay Para 34
+CC:56 #Delay Para 35
+CC:57 #Delay Para 36
+CC:58 #Delay Para 37
+CC:59 #Delay Para 38
+CC:60 #Delay Para 39
+CC:61 #Delay Para 40
+CC:80 #Filter Para 1
+CC:81 #Filter Para 2
+CC:82 #Filter Para 3
+CC:83 #Filter Para 4
+CC:84 #Filter Para 5
+CC:85 #Filter Para 6
 CC:100 #Looper Rec-Overdub
 CC:101 #Looper Play-Stop
 CC:102 #Looper FX1 Press
 CC:103 #Looper FX2 Press
-CC:117 #Toggle Tuner Mode
 CC:118 #Trigger Hold Mod
 CC:119 #Delay Half Speed
 [/AUTOMATION]
