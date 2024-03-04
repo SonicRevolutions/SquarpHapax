@@ -224,6 +224,8 @@ CC:102 #Looper FX1 Press
 CC:103 #Looper FX2 Press
 CC:118 #Trigger Hold Mod
 CC:119 #Delay Half Speed
+CC:120 #Delay Damping
+CC:121 #Midi Clock
 [/AUTOMATION]
 
 # This section will be readable from Hapax.
