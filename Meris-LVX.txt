@@ -139,6 +139,8 @@ INCHAN NULL
 117 Toggle Tuner Mode
 118 Trigger Hold Mod
 119 Delay Half Speed
+120 Delay Damping
+121 Midi Clock
 [/CC]
 
 # NRPN
