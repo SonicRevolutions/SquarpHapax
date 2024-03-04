@@ -4,13 +4,13 @@ VERSION 1 # Currently, this should only be 1.
 TRACKNAME OCTATRACK
 
 # Can be POLY, DRUM, MPE, or NULL
-TYPE POLY
+TYPE DRUM
 
 # Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
-OUTPORT A
+OUTPORT B
 
 # Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
-OUTCHAN 1
+OUTCHAN 4
 
 # Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
 INPORT NULL
@@ -31,10 +31,10 @@ INCHAN NULL
 7:NULL:7:84 TRACK 7
 6:NULL:6:84 TRACK 6
 5:NULL:5:84 TRACK 5
-4:NULL:4:84 TRACK 4
-3:NULL:3:84 TRACK 3
-2:NULL:2:84 TRACK 2
-1:NULL:1:84 TRACK 1
+4:NULL:4:84 Hats
+3:NULL:3:84 Clap
+2:NULL:2:84 Snare
+1:NULL:1:84 Bassdrum
 [/DRUMLANES]
 
 # PC

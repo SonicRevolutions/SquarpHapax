@@ -8,7 +8,7 @@ TRACKNAME LVX
 TYPE POLY
 
 # Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
-OUTPORT C
+OUTPORT USBD
 
 # Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
 OUTCHAN 9
