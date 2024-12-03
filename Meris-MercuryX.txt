@@ -128,10 +128,6 @@ INCHAN NULL
 CC:01 #Mix
 CC:02 #Dry Trim
 CC:03 #Wet Trim
-CC:04 #Expression Pedal
-CC:05 #Preamp Type
-CC:06 #Preamp Location
-CC:07 #Gain/Volume Pedal Level
 CC:08 #Balance
 CC:11 #Preamp Level
 CC:13 #Delay Structure
@@ -161,39 +157,30 @@ CC:42 #Predelay Blend
 CC:43 #Gate Attack
 CC:44 #Gate Hold
 CC:45 #Gate Decay
-CC:62 #Dynamics Type
-CC:63 #Dynamics Location
 CC:64 #Dynamics Parameter 1
 CC:65 #Dynamics Parameter 2
 CC:66 #Dynamics Parameter 3
 CC:67 #Dynamics Parameter 4
 CC:68 #Dynamics Parameter 5
 CC:69 #Dynamics Parameter 6
-CC:70 #Pitch Type
-CC:71 #Pitch Location
 CC:72 #Pitch Parameter 1
 CC:73 #Pitch Parameter 2
 CC:74 #Pitch Parameter 3
 CC:75 #Pitch Parameter 4
 CC:76 #Pitch Parameter 5
 CC:77 #Pitch Parameter 6
-CC:78 #Filter Type
-CC:79 #Filter Location
 CC:80 #Filter Parameter 1
 CC:81 #Filter Parameter 2
 CC:82 #Filter Parameter 3
 CC:83 #Filter Parameter 4
 CC:84 #Filter Parameter 5
 CC:85 #Filter Parameter 6
-CC:86 #Mod Type
-CC:87 #Mod Location
 CC:88 #Mod Parameter 1
 CC:89 #Mod Parameter 2
 CC:90 #Mod Parameter 3
 CC:91 #Mod Parameter 4
 CC:92 #Mod Parameter 5
 CC:93 #Mod Parameter 6
-CC:117 #Toggle Tuner Mode
 CC:118 #Trigger Hold Modifier
 [/AUTOMATION]
 
