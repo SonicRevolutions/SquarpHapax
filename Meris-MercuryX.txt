@@ -11,7 +11,7 @@ TYPE POLY
 OUTPORT USBD
 
 # Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
-OUTCHAN 11
+OUTCHAN 8
 
 # Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
 INPORT NULL
