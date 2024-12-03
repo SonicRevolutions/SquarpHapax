@@ -6,6 +6,25 @@ OUTCHAN 14
 INPORT ALLACTIVE
 INCHAN NULL
 
+# DRUMLANES
+# Syntax: ROW:TRIG:CHAN:NOTENUMBER NAME
+# ROW must be between 1 and 8
+# TRIG can be between 0 and 127, or NULL
+# CHAN can be a number between 1 and 16, Gx, CVx, CVGx (x between 1 and 4), or NULL
+# NOTENUMBER can be between 0 and 127, or NULL
+# NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
+# Please note this section will be discarded for tracks which are not DRUM tracks
+[DRUMLANES]
+8:NULL:10:13 TRACK 8
+7:NULL:10:11 TRACK 7
+6:NULL:10:10 Ride
+5:NULL:10:9 Open Hat
+4:NULL:10:8 Closed Hat
+3:NULL:10:3 Clap
+2:NULL:10:1 Snare
+1:NULL:10:0 Bassdrum
+[/DRUMLANES]
+
 [PC]
 1 A 01
 2 A 02
