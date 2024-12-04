@@ -20,7 +20,41 @@ INCHAN NULL
 [/PC]
 
 [CC]
-
+5 Time Subdivision
+6 Special Sauce Activity
+7 Modulation Shape
+8 Filter Cutoff
+9 Effect Mix
+10 Time Time
+11 Special Sauce Repeats
+12 Reverb Space
+13 Looper Loop level
+14 Modulation Frequency
+15 Filter Resonance
+16 Effect Volume
+17 Looper Looper pb speed
+18 Looper Looper pb stepped
+19 Modulation Depth
+20 Reverb Time
+21 Looper Fade time
+22 Looper On/Off
+23 Looper Playback dir
+24 Looper Routing
+25 Looper Only
+26 Looper Burst
+27 Looper Quantized
+28 Looper Record
+29 Looper Play
+30 Looper Overdub
+31 Looper Stop
+34 Looper Erase
+35 Looper Undo
+45 Preset Copy
+46 Preset Save
+47 Effect Reverse effect
+48 Time Hold Sampler
+93 Time Tap tempo
+102 Effect Bypass
 [/CC]
 
 # Syntax: POT_NUMBER TYPE:VALUE or POT_NUMBER TYPE:VALUE DEFAULT=DEFAULT_VALUE
@@ -29,6 +63,41 @@ INCHAN NULL
 
 # Syntax: TYPE:VALUE
 [AUTOMATION]
+CC:5 #Time Subdivision
+CC:6 #Special Sauce Activity
+CC:7 #Modulation Shape
+CC:8 #Filter Cutoff
+CC:9 #Effect Mix
+CC:10 #Time Time
+CC:11 #Special Sauce Repeats
+CC:12 #Reverb Space
+CC:13 #Looper Loop level
+CC:14 #Modulation Frequency
+CC:15 #Filter Resonance
+CC:16 #Effect Volume
+CC:17 #Looper Looper pb speed
+CC:18 #Looper Looper pb stepped
+CC:19 #Modulation Depth
+CC:20 #Reverb Time
+CC:21 #Looper Fade time
+CC:22 #Looper On/Off
+CC:23 #Looper Playback dir
+CC:24 #Looper Routing
+CC:25 #Looper Only
+CC:26 #Looper Burst
+CC:27 #Looper Quantized
+CC:28 #Looper Record
+CC:29 #Looper Play
+CC:30 #Looper Overdub
+CC:31 #Looper Stop
+CC:34 #Looper Erase
+CC:35 #Looper Undo
+CC:45 #Preset Copy
+CC:46 #Preset Save
+CC:47 #Effect Reverse effect
+CC:48 #Time Hold Sampler
+CC:93 #Time Tap tempo
+CC:102 #Effect Bypass
 [/AUTOMATION]
 
 [COMMENT]
